@@ -10,41 +10,98 @@
 
 
 <body>
-
-    <ul>
-        <li><a href="index.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
-
-    <header class="your-name">
-        <h1>Manzell Hatten</h1>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Manzell Hatten</a>
+            <!-- <nav>
+                <a href="index.html">About</a>
+                <a href="portfolio.html">Portfolio</a>
+                <a href="contact.html">Contact</a>
+            </nav> -->
+        </div>
     </header>
 
-    <div class="container">
+    <div id="main-container" class="container">
+        <section class="main-section">
 
-        <header>
             <h1>About me</h1>
-        </header>
 
-        <hr>
-
-
-        <p>
             <img src="http://rdironworks.com/wp-content/uploads/2017/12/dummy-200x200.png" alt="Blank">
 
-            After the avalanche, it took us a week to climb out. and most times they're friends, like you and me! i
-            should've known way back when... because of the kids. but for some reason, you and i react the exact
-            same way to water. do you see a little asian child with a blank expression on his face sitting outside
-            on a mechanical helicopter that shakes when you put quarters in it? hey, look at me when i'm talking to
-            you, motherfucker.
-        </p>
+            <p>
+                After the avalanche, it took us a week to climb out. and most times they're friends, like you and me! i
+                should've known way back when... because of the kids. but for some reason, you and i react the exact
+                same way to water. do you see a little asian child with a blank expression on his face sitting outside
+                on a mechanical helicopter that shakes when you put quarters in it? hey, look at me when i'm talking to
+                you, motherfucker.
+            </p>
 
+        </section>
+    </div>
+
+    <div id="main-container" class="container">
+        <section class="main-section">
+            <h1>Contact Information</h1>
+
+            <address>
+                Email address: <a href="manzellhatten@gmail.com">manzellhatten@gmail.com</a><br>
+                Phone number: 910-318-4741<br>
+                <a href="https://github.com/moneymanzell">Github Profile</a><br>
+                <a href="https://www.linkedin.com/in/manzell-hatten-1013122/">Linkedin Profile</a><br>
+                <a href="">Resume</a>
+            </address>
+
+
+            <form id="contact-form">
+                <ul>
+                    <li>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your name.." required="required">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email.." required="required">
+                    </li>
+                    <li>
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" placeholder="Message me..." required="required"></textarea>
+                    </li>
+                </ul>
+                <input type="submit" value="submit">
+            </form>
+
+        </section>
+    </div>
+
+    <div id="main-container" class="container">
+        <section class="main-section">
+
+            <h1>Portfolio</h1>
+
+            <div class="work">
+
+                <h3></h3>
+            </div>
+            <div class="work">
+
+                <h3></h3>
+            </div>
+            <div class="work">
+
+                <h3></h3>
+            </div>
+            <div class="work">
+
+                <h3></h3>
+            </div>
+        </section>
 
     </div>
 
     <footer>
-        Copyright
+        <div class="container">
+            Copyright &copy;
+        </div>
     </footer>
 </body>
 

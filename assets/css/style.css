@@ -1,45 +1,102 @@
 body {
     color: #777777;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif , 'Helvetica Neue';
-    background: url(/assets/images/what-the-hex-dark.png)
+    background: url("../images/what-the-hex-dark.png");
+    line-height: 34px;
 }
 
-.your-name {
+* {
+    box-sizing: border-box;
+}
+
+/* .your-name {
     text-align: center;
     width: 340px;
     background-color: teal;
     color: #ffffff;
     padding: 10px 5px;
     margin-left: 180px;
-}
+} */
 
 .container {
-    padding: 50px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #ffffff;
-    border: black;
-    border-width: 5px;
-    width: 960px;
-    margin-bottom: 0px;
-}
-image {
-    float: left;
+    width: 100%;
+    max-width: 960px;
 }
 
+h1,
+h2,
+h3,
 p {
-    border: black;
-    border-width: 5px;
+    margin-bottom: 20px;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    background-color: #ffffff;
+h1,
+h2,
+h3 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700;
+    color: red;
 }
 
-li {
+h1 {
+    padding-bottom: 20px;
+    font-size: 30px;
+    line-height: 49px;
+    border-bottom: 3px solid black;
+}
+
+h2,
+h3 {
+    font-size: 22px;
+}
+
+/* 
+------------------- */
+
+
+#masthead {
+    z-index: 99;
+    margin: 0 0 30px;
+    overflow: auto;
+    position: fixed;
+    width: 100%;
+    color: white;
+    background: white;
+}
+
+#logo {
+    float: left;
+    width: 377px;
+    height: 90px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 90px;
+    text-align: center;
+    text-decoration: none;
+    color: red;
+    margin-left: 30%;
+}
+
+nav {
+    margin-top: 25px;
+    float: right;
+}
+
+nav a {
+    padding-left: 15px;
+    color: red;
+    border-left: 1px solid black;
+    margin-left: 15px;
+    line-height: 18px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* li {
     float: right;
 }
 
@@ -54,37 +111,79 @@ li a {
 
 li a:hover{
     color: #666666;
-}
+} */
 
 footer {
     background-color: #666666;
-    color: #ffffff;
     text-align: center;
-    font-size: 10px;
-    padding: 20px;
-    border: solid #4aaaa5;
+    font-size: 12px;
+    padding: 30px 0;
+    border: solid grey;
     border-width: 10 0px;
+    clear: both;
+    height: 50px;
+    color: black;
 }
 
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 20x; /* Add a top margin */
-    margin-bottom: 20px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+
+/* 
+----------------------- */
+
+#main-container {
+    padding-top: 130px;
+    min-height: calc(100vh - 70px);
+}
+
+.main-section {
+    float: left;
+    width: 100%;
+    max-width: 960px;
+    padding: 30px;
+    margin:  0 0 40px;
+    background: white;
+    border: 1px solid grey;
+}
+
+/* ___________________ */
+#contact-form ul {
+    margin-bottom: 20px;
+}
+
+#contact-form li {
+    margin-bottom: 10px;
+}
+
+label {
+    color: red;
+}
+
+input[type=text], 
+label, 
+textarea,
+input[type=email] {
+    display: block;
+    width: 100%;
+  }
+
+input[type=text], 
+textarea,
+input[type=email] {
+    height: 35px;
+    padding: 0 10px;
+    font-size: 14px;
+    border: 1px solid black;
+  }
+
+  textarea {
+      height: 200px;
   }
   
   /* Style the submit button with a specific background color etc */
   input[type=submit] {
     background-color: #4CAF50;
     color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
+    padding: 10px 30px;
+    border:  0 none;
     cursor: pointer;
   }
   
@@ -92,11 +191,22 @@ input[type=text], select, textarea {
   input[type=submit]:hover {
     background-color: #45a049;
   }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: #f2f2f2;
-    padding: 20px;
+
+  @media screen and (max-width: 980px) {
+
   }
+
+  @media screen and (max-width: 748px) {
+
+  }
+
+  @media screen and (max-width: 640px) {
+      #masthead {
+          position: static;
+      }
+    
+      #logo {
+        width: 250px
+      }
+  }
+  
