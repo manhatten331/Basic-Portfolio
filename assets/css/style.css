@@ -208,5 +208,9 @@ input[type=email] {
       #logo {
         width: 250px
       }
+
+      .container {
+          margin: 10px;
+      }
   }
   
