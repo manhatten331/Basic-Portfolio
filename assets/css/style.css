@@ -56,6 +56,19 @@ h3 {
 /* 
 ------------------- */
 
+button {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    font-size: 16px;
+}
+
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background-color: black;
+  }
+
 
 #masthead {
     z-index: 99;
@@ -209,7 +222,7 @@ input[type=email] {
         width: 250px
       }
 
-      .container {
+      #main-container {
           margin: 10px;
       }
   }
