@@ -226,4 +226,18 @@ input[type=email] {
           margin: 10px;
       }
   }
+
+  @media screen and (max-width: 400px) {
+    #masthead {
+        position: static;
+    }
+  
+    #logo {
+      width: 250px
+    }
+
+    #main-container {
+        margin: 10px;
+    }
+}
   
