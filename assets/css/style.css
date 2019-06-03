@@ -205,6 +205,20 @@ input[type=email] {
     background-color: #45a049;
   }
 
+  @media screen and (max-width: 1125px) {
+    #masthead {
+        position: static;
+    }
+  
+    #logo {
+      width: 250px
+    }
+
+    #main-container {
+        margin: 10px;
+    }
+}
+
   @media screen and (max-width: 980px) {
 
   }
@@ -227,17 +241,4 @@ input[type=email] {
       }
   }
 
-  @media screen and (max-width: 400px) {
-    #masthead {
-        position: static;
-    }
-  
-    #logo {
-      width: 250px
-    }
-
-    #main-container {
-        margin: 10px;
-    }
-}
   
